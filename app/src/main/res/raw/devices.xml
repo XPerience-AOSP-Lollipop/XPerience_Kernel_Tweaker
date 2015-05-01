@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+File contain partitions layout for flashing kernel & recovery
+-->
+<devices>
+    <device>
+        <model>GT-I9505,Nexus 4,Nexus 5,LG-E960,C6603,SGH-M919,GT-I9190,GT-I9195</model>
+        <kernel>/dev/block/platform/msm_sdcc.1/by-name/boot</kernel>
+        <recovery>/dev/block/platform/msm_sdcc.1/by-name/recovery</recovery>
+        <cache>/dev/block/platform/msm_sdcc.1/by-name/cache</cache>
+    </device>
+
+    <device>
+        <model>MT27,MT27i,MT27a</model> <!-- Sony Xperia Sola pepper -->
+        <kernel>/dev/block/mmcblk0p9</kernel>
+        <recovery>/dev/block/mmcblk0p10</recovery>
+        <cache>/dev/block/mmcblk0p12</cache>
+    </device>
+	
+    <device>
+        <model>ST25,ST25i,ST25a,Xperia U,kumquat</model> <!-- Sony Xperia U kumquat -->
+        <kernel>/dev/block/mmcblk0p9</kernel>
+        <recovery>/dev/block/mmcblk0p9</recovery>
+        <cache>/dev/block/mmcblk0p12</cache>
+    </device>
+
+	<device>
+        <model>LT25i,LT29i,LT30a,LT30p,C5302,C5303</model>
+        <kernel>/dev/block/mmcblk0p4</kernel>
+        <recovery>/dev/block/mmcblk0p4</recovery>
+        <cache>/dev/block/mmcblk0p12</cache>
+    </device>
+
+    <device>
+        <model>GT-i9082</model>
+        <kernel>/dev/block/mmcblk0p5</kernel>
+        <recovery>/dev/block/mmcblk0p6</recovery>
+        <cache>/dev/block/mmcblk0p18</cache>
+    </device>
+
+    <!--Motorola moto G device-->
+    <device>
+        <model>XT1032,XT1033,XT1028,falcon,falcon_umts,falcon_gpe,falcon_umtsds,falcon_cdma,Moto G,xt1028,xt1031,xt1032,xt1033,xt1034</model>
+        <kernel>/dev/block/platform/msm_sdcc.1/by-name/boot</kernel>
+        <recovery>/dev/block/platform/msm_sdcc.1/by-name/recovery</recovery>
+        <cache>/dev/block/platform/msm_sdcc.1/by-name/cache</cache>
+    </device>
+
+    <!-- Nexus 7 2012 -->
+    <device>
+        <model>grouper,Nexus 7</model>
+        <cache>/dev/block/platform/sdhci-tegra.3/by-name/CAC</cache>
+        <kernel>/dev/block/platform/sdhci-tegra.3/by-name/LNX</kernel>
+        <recovery>/dev/block/platform/sdhci-tegra.3/by-name/SOS</recovery>
+    </device>
+
+</devices>

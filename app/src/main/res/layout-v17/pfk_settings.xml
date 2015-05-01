@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+XPerience Kernel Tweaker - An Android CPU Control application
+Copyright (C) 2011-2015 Carlos "Klozz" Jesus <TeamMEX@XDA-Developers>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:elevation="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:id="@+id/lsw1">
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pt_home_enabled"
+                    android:id="@+id/switchhome"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lhome1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="start">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ps_home_enabled"
+                    android:id="@+id/ihome"
+                    android:textSize="17sp"
+                    android:layout_toStartOf="@+id/hview"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hview"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lhome2"
+                android:padding="10dp"
+                android:background="@drawable/clickable"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_allowed_irq_title"
+                    android:id="@+id/hval1"
+                    android:textSize="17sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/hview1"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hview1"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lhome3"
+                android:padding="10dp"
+                android:background="@drawable/clickable"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_report_wait_title"
+                    android:id="@+id/hval2"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/hview2"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hview2"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:layout_marginTop="20dp"
+                android:id="@+id/lsw2">
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pt_menuback_enabled"
+                    android:id="@+id/switchmenu"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lmenu1"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ps_menuback_enabled"
+                    android:id="@+id/imenu"
+                    android:textSize="17sp"
+                    android:layout_toStartOf="@+id/mview"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mview"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"/>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lmenu2"
+                android:padding="10dp"
+                android:background="@drawable/clickable"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menuback_interrupt_checks_title"
+                    android:id="@+id/mval1"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/mview1"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mview1"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lmenu3"
+                android:padding="10dp"
+                android:background="@drawable/clickable"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menuback_first_err_wait_title"
+                    android:id="@+id/mval2"
+                    android:textSize="17sp"
+                    android:layout_toStartOf="@+id/mview2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mview2"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lmenu4"
+                android:padding="10dp"
+                android:background="@drawable/clickable"
+                android:gravity="start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menuback_last_err_wait_title"
+                    android:id="@+id/mval3"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/mview3"
+                    android:gravity="start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mview3"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:gravity="end" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+</ScrollView>
